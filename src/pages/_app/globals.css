@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-gray-800;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  @apply prose prose-invert;
+}
+
+h1 {
+  @apply text-6xl text-center;
+  @apply md:text-7xl text-left;
+  @apply text-white font-black;
+  @apply tracking-wide;
+  @apply my-2;
+}
+
+h3 {
+  @apply text-center text-2xl;
+  @apply text-left md:text-4xl;
+  @apply text-white font-black;
+  @apply tracking-wide;
+  @apply my-2;
+  @apply text-center md:text-left;
+}
+
+p {
+  @apply prose-2xl;
+  @apply leading-relaxed tracking-wider;
+  @apply my-4 px-4;
+}
